@@ -2,7 +2,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Widget;
-using Tasky.PortableLibrary;
+using Tasky.PortableLibrary.Models;
 using TaskyAndroid;
 
 namespace TaskyAndroid.Screens 

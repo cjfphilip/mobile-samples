@@ -1,6 +1,5 @@
-using System;
 using UIKit;
-using Tasky.PortableLibrary;
+using Tasky.PortableLibrary.Models;
 using MonoTouch.Dialog;
 
 namespace Tasky.ApplicationLayer 

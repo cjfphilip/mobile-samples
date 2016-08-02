@@ -2,7 +2,7 @@
 using System.IO;
 using SQLite;
 using Android.App;
-using Tasky.PortableLibrary;
+using Tasky.PortableLibrary.Managers;
 
 namespace TaskyAndroid
 {

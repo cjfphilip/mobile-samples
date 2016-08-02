@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using SQLite;
+using Tasky.PortableLibrary.Models;
+using Tasky.PortableLibrary.Database;
 
-namespace Tasky.PortableLibrary 
+namespace Tasky.PortableLibrary.Repositories
 {
 	public class TodoItemRepository
 	{

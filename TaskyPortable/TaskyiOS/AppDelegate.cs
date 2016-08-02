@@ -6,6 +6,7 @@ using UIKit;
 using SQLite;
 using Tasky.PortableLibrary;
 using System.IO;
+using Tasky.PortableLibrary.Managers;
 
 namespace Tasky 
 {

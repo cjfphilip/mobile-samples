@@ -1,7 +1,7 @@
 using System;
 using SQLite;
 
-namespace Tasky.PortableLibrary 
+namespace Tasky.PortableLibrary.Models
 {
 	/// <summary>
 	/// Todo Item business object

@@ -3,8 +3,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Widget;
-using Tasky.PortableLibrary;
-using TaskyAndroid;
+using Tasky.PortableLibrary.Models;
 using TaskyAndroid.ApplicationLayer;
 
 namespace TaskyAndroid.Screens 

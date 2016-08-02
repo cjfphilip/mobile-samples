@@ -2,14 +2,15 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using SQLite;
+using Tasky.PortableLibrary.Models;
 
-namespace Tasky.PortableLibrary
+namespace Tasky.PortableLibrary.Database
 {
 	/// <summary>
 	/// TaskDatabase uses ADO.NET to create the [Items] table and create,read,update,delete data
 	/// </summary>
-	public class TodoDatabase 
-	{
+	public class TodoDatabase
+    {
 		static object locker = new object ();
 
 		public SQLiteConnection database;
@@ -20,7 +21,7 @@ namespace Tasky.PortableLibrary
 		/// Initializes a new instance of the <see cref="Tasky.DL.TaskDatabase"/> TaskDatabase. 
 		/// if the database doesn't exist, it will create the database and all the tables.
 		/// </summary>
-		public TodoDatabase (SQLiteConnection conn) 
+		public TodoDatabase(SQLiteConnection conn) 
 		{
 			database = conn;
 			// create the tables
