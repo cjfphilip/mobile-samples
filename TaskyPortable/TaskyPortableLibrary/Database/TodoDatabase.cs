@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using SQLite;
 using Tasky.PortableLibrary.Models;
+using TaskyPortableLibrary.Contracts;
 
 namespace Tasky.PortableLibrary.Database
 {
@@ -21,9 +22,9 @@ namespace Tasky.PortableLibrary.Database
 		/// Initializes a new instance of the <see cref="Tasky.DL.TaskDatabase"/> TaskDatabase. 
 		/// if the database doesn't exist, it will create the database and all the tables.
 		/// </summary>
-		public TodoDatabase(SQLiteConnection conn) 
+		public TodoDatabase(ISQLiteConnectionManager connectionManager) 
 		{
-			database = conn;
+			database = connectionManager.GetSqLiteConnection();
 			// create the tables
 			database.CreateTable<TodoItem>();
 		}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using SQLite;
 using Tasky.PortableLibrary.Repositories;
 using Tasky.PortableLibrary.Models;
+using TaskyPortableLibrary.Contracts;
 
 namespace Tasky.PortableLibrary.Managers
 {
@@ -11,11 +12,11 @@ namespace Tasky.PortableLibrary.Managers
 	/// </summary>
 	public class TodoItemManager 
 	{
-		TodoItemRepository repository; 
+	    readonly TodoItemRepository repository; 
 
-		public TodoItemManager (SQLiteConnection conn)
+		public TodoItemManager (ISQLiteConnectionManager connectionManager)
 		{
-			repository = new TodoItemRepository (conn);
+			repository = new TodoItemRepository (connectionManager);
 		}
 		
 		public TodoItem GetTask(int id)

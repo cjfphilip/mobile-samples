@@ -51,7 +51,7 @@ namespace TaskyAndroid.Screens
 		{
 			base.OnResume ();
 
-			tasks = TaskyApp.Current.TodoManager.GetTasks();
+			tasks = App.Current.TodoManager.GetTasks();
 			
 			// create our adapter
 			taskList = new TodoItemListAdapter(this, tasks);
